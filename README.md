@@ -46,8 +46,8 @@ In this hack, data engineers will learn how to migrate their platform to the clo
 
 - Your own Azure subscription with Owner access
 - Visual Studio Code
-- Azure CLI
-- Download WorldWide Importers Database (OLTP & OLAP)
+- Azure Cloud Shell
+- SQL Server Management Studio
 
 ## Technologies
 
