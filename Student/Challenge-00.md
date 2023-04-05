@@ -47,6 +47,11 @@ You will find the provided deployment script (`hacksetup.sh`), ARM Template (`de
 
 Navigate to wherever you have unpacked the `/Challenge0/` folder in your [Azure Cloud Shell](https://shell.azure.com) and complete the following steps:
 
+
+Validate that a new container instance, a SQL server and ADF resources are now visible in the resource group
+Go into the ADF studio and start the SSIS runtime that has been created. This will also create a new SQL server – SSISDB – visible in the resource group
+![image](https://user-images.githubusercontent.com/61484072/230082565-6ac7518a-4ad9-4b25-b3f7-11d81dd17140.png)
+
 1. Remove code highlighted below in hacksetup.sh file provided in the `Resources.zip` and add the name for the resource group you have created or been provided
     ```bash
     #az login
@@ -59,8 +64,9 @@ Navigate to wherever you have unpacked the `/Challenge0/` folder in your [Azure 
     #echo "Creating resource group '$RGNAME' in Azure region '$LOCATION'..."
     #az group create --location $LOCATION --name $RGNAME
     ```
-
-2. Run the deployment script by running the following commands:
+2. Opening Azure Cloud Shell and create or select existing storage account in the same region as the resource group, and upload the provided 3 resources for challenge 0 into a fileshare.
+3. In the cloud shell terminal run command `cd clouddrive`, or change the directory to wherever the resources are saved – validate all 3 files are in current directory by running command `ls`.
+4. Run the deployment script by running the following commands:
     ```bash
     # Make the file executable
     chmod +x hacksetup.sh
